@@ -1,0 +1,19 @@
+#include<LPC21xx.h>
+void cfgportpinfunc(int PortNo,int PinNo,int fn)
+{
+	if(PortNo==0)
+	{
+		if(PinNo<16)
+		{
+			PINSEL0=(((PINSEL0&~(3<<(PinNo*2))))|(fn<<(PinNo*2)));
+		}
+		else
+		{
+			PINSEL1=(((PINSEL1&~(3<<((PinNo-16)*2))))|(fn<<((PinNo-16)*2)));
+		}
+	}
+	else
+	{
+		//dummy
+	}
+}
