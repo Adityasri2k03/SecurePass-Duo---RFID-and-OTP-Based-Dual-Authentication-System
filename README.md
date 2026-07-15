@@ -437,6 +437,7 @@ This project demonstrates practical knowledge of:
 # 👨‍💻 Author
 
 **Aditya Srivastava**
+
 Embedded Systems Engineer
 
 ---
