@@ -340,25 +340,6 @@ Denied            │
 
 ---
 
-# 🔌 Pin Connections
-
-| LPC2148 Pin | Connection |
-|-------------|------------|
-| P0.0 | GSM TxD |
-| P0.1 | GSM RxD |
-| P0.3 | External Interrupt (EINT1) |
-| P0.8 | RFID TxD |
-| P0.9 | RFID RxD |
-| P0.8–P0.15 | LCD Data Lines |
-| P0.16 | LCD RS |
-| P0.17 | LCD RW |
-| P0.18 | LCD EN |
-| P0.12 | Relay / Door Lock |
-| P1.16–P1.19 | Keypad Rows |
-| P1.20–P1.23 | Keypad Columns |
-
----
-
 # 🛠️ Project Setup
 
 Initialize all peripherals before entering the main loop.
@@ -372,23 +353,6 @@ gsm_init();
 InitKPM();
 enable_eint1();
 ```
-
-Required header files:
-
-```
-lpc21xx.h
-string.h
-lcd.h
-lcd_defines.h
-delay.h
-types.h
-uart_interrupt.h
-defines.h
-kpm.h
-rtc.h
-admin.h
-```
-
 ---
 
 # 📂 Project Modules
@@ -472,10 +436,7 @@ This project demonstrates practical knowledge of:
 
 # 👨‍💻 Author
 
-**Kurumidde Vinay Kumar**
-
+**Aditya Srivastava**
 Embedded Systems Engineer
 
 ---
-
-## ⭐ If you found this project useful, consider giving it a Star!
